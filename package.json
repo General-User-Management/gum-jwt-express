@@ -1,0 +1,60 @@
+{
+  "name": "gum-jwt-express",
+  "version": "1.0.0",
+  "description": "GUM JWT authentication middleware.",
+  "keywords": [
+    "auth",
+    "authn",
+    "authentication",
+    "authz",
+    "authorization",
+    "http",
+    "jwt",
+    "token",
+    "oauth",
+    "express"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:General-User-Management/gum-jwt-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/General-User-Management/gum-jwt-express/issues"
+  },
+  "author": {
+    "name": "haungyingxian",
+    "email": "492753097@qq.com",
+    "url": "https://github.com/huangyingxian"
+  },
+  "license": "MIT",
+  "main": "./lib",
+  "dependencies": {
+    "async": "^1.5.0",
+    "axios": "^0.19.2",
+    "express-unless": "^0.3.0",
+    "jsonwebtoken": "^8.1.0",
+    "lodash.set": "^4.0.0"
+  },
+  "devDependencies": {
+    "conventional-changelog": "~1.1.0",
+    "mocha": "^7.1.1"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec",
+    "standardfix": "standard --fix",
+    "standard": "standard"
+  },
+  "standard": {
+    "ignore": [
+      "/**/*.test.js",
+      "./bin/changelog"
+    ],
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}
